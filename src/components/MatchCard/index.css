@@ -1,0 +1,43 @@
+/* Write your CSS here */
+.match-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  background-color: #0f172a;
+
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+
+  width: 30%;
+  height: 30vh;
+  color: white;
+
+  text-align: center;
+
+  overflow: auto;
+}
+.match-card-image {
+  width: 30%;
+  height: 30%;
+}
+.won {
+  color: Green;
+}
+.lost {
+  color: red;
+}
+@media screen and (max-width: 560px) {
+  .match-card-container {
+    min-height: fit-content;
+
+    width: 40%;
+
+    margin: 5px;
+    padding: 5px;
+  }
+}
