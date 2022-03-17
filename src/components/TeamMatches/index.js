@@ -58,6 +58,7 @@ class TeamMatches extends Component {
   }
 
   formatRecentMatchData = recentMatch => ({
+    id: recentMatch.id,
     competingTeam: recentMatch.competing_team,
     competingTeamLogo: recentMatch.competing_team_logo,
     result: recentMatch.result,
@@ -67,7 +68,8 @@ class TeamMatches extends Component {
   renderTeamMatchesDetails = () => {
     const {formattedData} = this.state
     const {teamBannerUrl, latestMatchDetails, recentMatches} = formattedData
-    console.dir(formattedData)
+    // console.dir(formattedData)
+    // recentMatches.map(match => console.log(match.id))
 
     return (
       <div className="team-matches-body-container">
@@ -86,7 +88,7 @@ class TeamMatches extends Component {
 
   render() {
     const {isLoading} = this.state
-    console.log(isLoading)
+    // console.log(isLoading)
 
     return (
       <div className="team-matches-container">
